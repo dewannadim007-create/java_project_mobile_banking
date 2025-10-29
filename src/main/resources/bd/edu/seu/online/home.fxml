@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #178582;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.online.controller.HomeController">
+   <children>
+      <Label fx:id="nameLabel" layoutX="128.0" layoutY="65.0" prefHeight="25.0" prefWidth="75.0" text="Label" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="balanceLabel" alignment="CENTER" layoutX="497.0" layoutY="68.0" onMouseClicked="#checkWallet" prefHeight="17.0" prefWidth="90.0" text="Tap To Check" textFill="#f4f4f4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="439.0" layoutY="195.0" onMouseClicked="#changeToUtility" prefHeight="25.0" prefWidth="103.0" text="Utility Payment" textFill="#efefef">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="86.0" layoutY="199.0" onMouseClicked="#changeToEBanking" text="E-Bank" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="253.0" layoutY="199.0" onMouseClicked="#changeToSendMoney" text="Send Money" textFill="#f4f4f4">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="greetingsLabel" layoutX="26.0" layoutY="19.0" prefHeight="25.0" prefWidth="103.0" text="Label" textFill="#ebebeb">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+      <ImageView fitHeight="53.0" fitWidth="63.0" layoutX="80.0" layoutY="138.0" onMouseClicked="#changeToEBanking" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-mobile-banking-66.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="466.0" layoutY="143.0" onMouseClicked="#changeToUtility" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@utiltiy.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="265.0" layoutY="141.0" onMouseClicked="#changeToEBanking" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-send-money-64.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="461.0" layoutY="321.0" onMouseClicked="#changeToMenu" prefHeight="25.0" prefWidth="47.0" text="Menu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="129.0" fitWidth="47.0" layoutX="465.0" layoutY="253.0" onMouseClicked="#changeToMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-menu-96.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="80.0" layoutY="131.0" onMouseClicked="#changeToEBanking" prefHeight="66.0" prefWidth="54.0" style="-fx-border-color: orange;" />
+      <Label layoutX="261.0" layoutY="131.0" onMouseClicked="#changeToSendMoney" prefHeight="66.0" prefWidth="54.0" style="-fx-border-color: orange;" />
+      <Label layoutX="457.0" layoutY="134.0" onMouseClicked="#changeToUtility" prefHeight="66.0" prefWidth="54.0" style="-fx-border-color: orange;" />
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="78.0" layoutY="258.0" onMouseClicked="#changeToCheckBook" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cheque.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="75.0" layoutY="248.0" onMouseClicked="#changeToCheckBook" prefHeight="66.0" prefWidth="54.0" style="-fx-border-color: orange;" />
+      <Label alignment="CENTER" layoutX="66.0" layoutY="325.0" onMouseClicked="#changeToCheckBook" text="Cheque Book" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="85.0" layoutY="341.0" onMouseClicked="#changeToCheckBook" text="Apply" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="65.0" prefHeight="25.0" prefWidth="90.0" text="WELCOME," textFill="#fbfbfb">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="457.0" layoutY="249.0" onMouseClicked="#changeToMenu" prefHeight="66.0" prefWidth="63.0" style="-fx-border-color: orange;" />
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="265.0" layoutY="258.0" onMouseClicked="#changeToStatement" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bank-statement.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="261.0" layoutY="248.0" onMouseClicked="#changeToStatement" prefHeight="66.0" prefWidth="54.0" style="-fx-border-color: orange;" />
+      <Label alignment="CENTER" layoutX="256.0" layoutY="321.0" onMouseClicked="#changeToStatement" prefHeight="25.0" prefWidth="63.0" text="Statement" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="394.0" layoutY="66.0" prefHeight="25.0" prefWidth="103.0" text="Wallet Balance:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

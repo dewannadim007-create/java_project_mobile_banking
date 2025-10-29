@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #178582;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.online.controller.AddMoneyController">
+   <children>
+      <TextField fx:id="amountField" layoutX="221.0" layoutY="208.0" />
+      <PasswordField fx:id="passwordField" layoutX="221.0" layoutY="270.0" />
+      <Label layoutX="4.0" layoutY="14.0" onMouseClicked="#changeToEBanking" prefHeight="22.0" prefWidth="589.0" style="-fx-background-color: yellow;" text="←  E-Banking" textFill="#141414">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="225.0" layoutY="331.0" mnemonicParsing="false" onAction="#transfer" prefHeight="27.0" prefWidth="141.0" style="-fx-border-color: white; -fx-background-color: blue;" text="Add " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="112.0" layoutY="83.0" prefHeight="17.0" prefWidth="332.0" text="Add Money To Wallet" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="212.0" text="Amount" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="112.0" layoutY="274.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="balanceLabel" layoutX="193.0" layoutY="146.0" prefHeight="27.0" prefWidth="211.0" style="-fx-border-color: yellow;" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="112.0" layoutY="101.0" prefHeight="3.0" prefWidth="332.0" style="-fx-background-color: #cdb90c;" />
+   </children>
+</AnchorPane>

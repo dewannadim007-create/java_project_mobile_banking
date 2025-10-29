@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #178582;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.online.controller.GasController">
+   <children>
+      <Label layoutX="5.0" layoutY="14.0" onMouseClicked="#changeToUtility" prefHeight="22.0" prefWidth="590.0" style="-fx-background-color: yellow;" text="←  Utility/Recharge" textFill="#141414">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="81.0" text="Provider" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="297.0" layoutY="81.0" text="Type" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="461.0" layoutY="81.0" text="Account Number">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="106.0" text="Titas Gas Distribution" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="288.0" layoutY="106.0" text="Prepaid" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="accountField" layoutX="438.0" layoutY="103.0" />
+      <Label layoutX="36.0" layoutY="167.0" text="Amount:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="98.0" />
+      <Label layoutX="461.0" layoutY="81.0" text="Account Number" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="295.0" text="Available Balance: " textFill="WHITE" />
+      <Label fx:id="add500Label" layoutX="82.0" layoutY="193.0" onMouseClicked="#add500" prefHeight="17.0" prefWidth="34.0" text="৳ 500" textFill="WHITE" />
+      <Label fx:id="add1000Label" layoutX="82.0" layoutY="215.0" onMouseClicked="#add1000" text="৳ 1000" textFill="WHITE" />
+      <Label layoutX="36.0" layoutY="167.0" text="Amount:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="add1200Label" layoutX="82.0" layoutY="240.0" onMouseClicked="#add1200" text="৳ 1200" textFill="WHITE" />
+      <Label fx:id="add1500Label" layoutX="82.0" layoutY="263.0" onMouseDragged="#add1500" text="৳ 1500" textFill="WHITE" />
+      <Label fx:id="availableBalanceLabel" layoutX="248.0" layoutY="295.0" prefHeight="17.0" prefWidth="98.0" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="249.0" layoutY="328.0" mnemonicParsing="false" onAction="#proceed" prefHeight="38.0" prefWidth="143.0" style="-fx-border-color: white; -fx-background-color: blue;" text="Proceed" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="amountField" alignment="CENTER" layoutX="168.0" layoutY="204.0" prefHeight="63.0" prefWidth="131.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="396.0" layoutY="227.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="461.0" layoutY="223.0" prefHeight="25.0" prefWidth="112.0" />
+   </children>
+</AnchorPane>

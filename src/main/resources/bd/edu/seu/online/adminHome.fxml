@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #178582;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.online.controller.HomeController">
+   <children>
+      <Label fx:id="nameLabel" layoutX="128.0" layoutY="65.0" prefHeight="25.0" prefWidth="75.0" text="Label" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="greetingsLabel" layoutX="26.0" layoutY="19.0" prefHeight="25.0" prefWidth="103.0" text="Label" textFill="#ebebeb">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="461.0" layoutY="321.0" onMouseClicked="#changeToMenu" prefHeight="25.0" prefWidth="47.0" text="Menu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="129.0" fitWidth="47.0" layoutX="465.0" layoutY="253.0" onMouseClicked="#changeToMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-menu-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="78.0" layoutY="258.0" onMouseClicked="#changeToCheckBook" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cheque.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="75.0" layoutY="248.0" onMouseClicked="#changeToCheckBook" prefHeight="66.0" prefWidth="54.0" style="-fx-border-color: orange;" />
+      <Label alignment="CENTER" layoutX="66.0" layoutY="325.0" onMouseClicked="#changeToCheckBook" text="Cheque Book" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="85.0" layoutY="341.0" onMouseClicked="#changeToCheckBook" text="Apply" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="65.0" prefHeight="25.0" prefWidth="90.0" text="WELCOME," textFill="#fbfbfb">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="457.0" layoutY="249.0" onMouseClicked="#changeToMenu" prefHeight="66.0" prefWidth="63.0" style="-fx-border-color: orange;" />
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+      <ImageView fitHeight="66.0" fitWidth="63.0" layoutX="72.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../ideaproject/online/src/main/resources/bd/edu/seu/online/users_icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="87.0" layoutY="190.0" text="Users" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="113.0" onMouseClicked="#changeToUsers" prefHeight="66.0" prefWidth="63.0" style="-fx-border-color: orange;" />
+   </children>
+</AnchorPane>

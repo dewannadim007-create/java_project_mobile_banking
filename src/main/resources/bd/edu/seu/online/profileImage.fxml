@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #178582;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.online.controller.ProfileImageController">
+   <children>
+      <Label layoutX="7.0" layoutY="24.0" onMouseClicked="#changeToHome" prefHeight="22.0" prefWidth="592.0" style="-fx-background-color: yellow;" text="← Home" textFill="#141414">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="145.0" layoutY="85.0" prefHeight="17.0" prefWidth="332.0" text="Statement" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutX="145.0" layoutY="104.0" prefHeight="3.0" prefWidth="332.0" style="-fx-background-color: #cdb90c;" />
+      <Label fx:id="dailyAccountLabel" layoutX="239.0" layoutY="255.0" text="dacl" textFill="WHITE" />
+      <Label fx:id="monthlyAccountLabel" layoutX="437.0" layoutY="250.0" text="macl" textFill="WHITE" />
+      <Label fx:id="monthlyWalletLabel" layoutX="439.0" layoutY="208.0" text="mwl" textFill="WHITE" />
+      <Label fx:id="dailyWalletLabel" layoutX="241.0" layoutY="208.0" text="dwl" textFill="WHITE" />
+      <Label layoutX="52.0" layoutY="208.0" text="Wallet" textFill="WHITE" />
+      <Label layoutX="44.0" layoutY="250.0" prefHeight="17.0" prefWidth="49.0" text="Account" textFill="WHITE" />
+      <Label layoutX="130.0" layoutY="208.0" text="99/50000" textFill="WHITE" />
+      <Label layoutX="37.0" layoutY="150.0" text="TP Identifier" textFill="WHITE" />
+      <Label layoutX="140.0" layoutY="172.0" prefHeight="17.0" prefWidth="68.0" text="Limit      " textFill="WHITE" />
+      <Label layoutX="181.0" layoutY="142.0" text="Daily" textFill="WHITE" />
+      <Separator layoutX="109.0" layoutY="133.0" orientation="VERTICAL" prefHeight="149.0" prefWidth="6.0" />
+      <Separator layoutX="272.0" layoutY="133.0" orientation="VERTICAL" prefHeight="149.0" prefWidth="6.0" />
+      <Separator layoutX="13.0" layoutY="193.0" prefHeight="3.0" prefWidth="459.0" />
+      <Separator layoutX="111.0" layoutY="169.0" prefHeight="3.0" prefWidth="361.0" />
+      <Label layoutX="218.0" layoutY="172.0" text="Used" textFill="WHITE" />
+      <Label layoutX="308.0" layoutY="172.0" prefHeight="17.0" prefWidth="68.0" text="Limit      " textFill="WHITE" />
+      <Label layoutX="408.0" layoutY="172.0" text="Used" textFill="WHITE" />
+      <Label layoutX="342.0" layoutY="142.0" text="Monthly" textFill="WHITE" />
+      <Separator layoutX="16.0" layoutY="134.0" prefHeight="3.0" prefWidth="459.0" />
+      <Separator layoutX="194.0" layoutY="173.0" orientation="VERTICAL" prefHeight="107.0" prefWidth="6.0" />
+      <Separator layoutX="374.0" layoutY="171.0" orientation="VERTICAL" prefHeight="107.0" prefWidth="6.0" />
+      <Separator layoutX="474.0" layoutY="133.0" orientation="VERTICAL" prefHeight="149.0" prefWidth="6.0" />
+      <Separator layoutX="20.0" layoutY="237.0" prefHeight="3.0" prefWidth="459.0" />
+      <Label layoutX="291.0" layoutY="208.0" text="999/500000" textFill="WHITE" />
+      <Label layoutX="285.0" layoutY="255.0" text="999/10000000" textFill="WHITE" />
+      <Label layoutX="123.0" layoutY="250.0" text="99/1000000" textFill="WHITE" />
+      <Label fx:id="dailyAccountTrLabel" layoutX="204.0" layoutY="255.0" text="Label" textFill="WHITE" />
+      <Label fx:id="monthlyWalletTrLabel" layoutX="394.0" layoutY="208.0" text="Label" textFill="WHITE" />
+      <Label fx:id="monthlyAccountTrLabel" layoutX="394.0" layoutY="250.0" text="Label" textFill="WHITE" />
+      <Label fx:id="dailyWalletTrLabel" layoutX="204.0" layoutY="208.0" text="Label" textFill="WHITE" />
+      <Separator layoutX="15.0" layoutY="280.0" prefHeight="3.0" prefWidth="459.0" />
+      <Separator layoutX="13.0" layoutY="133.0" orientation="VERTICAL" prefHeight="149.0" prefWidth="6.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #178582;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.online.controller.UtilityController">
+   <children>
+      <Label layoutX="7.0" layoutY="14.0" onMouseClicked="#changeToHome" prefHeight="22.0" prefWidth="592.0" style="-fx-background-color: yellow;" text="←  Home">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="127.0" layoutY="87.0" prefHeight="17.0" prefWidth="332.0" text="Utility / Recharge" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutX="136.0" layoutY="114.0" prefHeight="3.0" prefWidth="332.0" style="-fx-background-color: #cdb90c;" />
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="136.0" layoutY="153.0" onMouseClicked="#changeToPayment" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-light-64.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="133.0" layoutY="144.0" onMouseClicked="#changeToPayment" prefHeight="66.0" prefWidth="54.0" style="-fx-border-color: blue;" />
+      <Label alignment="CENTER" layoutX="122.0" layoutY="217.0" onMouseClicked="#changeToPayment" text="Electricity Bill" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="272.0" layoutY="217.0" onMouseClicked="#changeToGas" text="Gas Bill" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="266.0" layoutY="144.0" onMouseClicked="#changeToGas" prefHeight="66.0" prefWidth="54.0" style="-fx-border-color: blue;" />
+      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="266.0" layoutY="153.0" onMouseClicked="#changeToGas" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@firre.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="395.0" layoutY="144.0" onMouseClicked="#changeToRecharge" prefHeight="66.0" prefWidth="54.0" style="-fx-border-color: blue;" />
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="399.0" layoutY="154.0" onMouseClicked="#changeToRecharge" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mobile-recharge.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="390.0" layoutY="213.0" onMouseClicked="#changeToRecharge" prefHeight="25.0" prefWidth="63.0" text="Recharge" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
